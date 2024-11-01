@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #e0f7fa; /* Azul celeste claro que evoca el cielo */
+    background-color: #e0f2f1; /* Fondo celeste suave, como el cielo sobre el mar */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,15 +9,15 @@ body {
 }
 
 .profile-card {
-    /* Degradado marino con colores azul, celeste, amarillo y marrón */
+    /* Degradado estilo marino con azul, celeste, arena y marrón */
     background: linear-gradient(to bottom, #4facfe, #00c3c7, #f7d794, #e9a26b);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     width: 90%;
     max-width: 400px;
-    color: white;
+    color: #ffffff;
 }
 
 .header {
@@ -25,15 +25,15 @@ body {
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    border: 3px solid #e0f7fa; /* Borde de la foto en tono celeste */
+    border: 3px solid #00c3c7; /* Borde celeste vibrante */
 }
 
 .subtitle {
-    font-size: 0.9em;
-    color: #f7f7f7; /* Color suave que contrasta con el degradado */
+    font-size: 0.95em;
+    color: #f1f8e9; /* Suave contraste para acompañar el fondo marino */
 }
 
 .actions {
@@ -44,50 +44,50 @@ body {
 }
 
 .action-btn {
-    background-color: #f7d794; /* Amarillo suave que evoca arena */
+    background-color: #ffd54f; /* Amarillo arena */
     color: #004d61; /* Azul profundo */
     border: none;
     border-radius: 50%;
-    padding: 10px;
+    padding: 12px;
     font-size: 1.2em;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     transition: background-color 0.3s ease;
 }
 
 .action-btn:hover {
-    background-color: #e9a26b; /* Marrón claro */
+    background-color: #ffa726; /* Cambio a un tono más cálido */
 }
 
 .content {
-    background-color: #ffffff; /* Fondo blanco para contrastar */
-    color: #004d61; /* Texto en azul marino */
+    background-color: #ffffff; /* Fondo blanco para resaltar contenido */
+    color: #004d61; /* Azul oscuro para el texto */
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
     text-align: left;
 }
 
 .info-item {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .info-label {
     font-weight: bold;
-    color: #00c3c7; /* Celeste para resaltar las etiquetas */
+    color: #00bcd4; /* Celeste para resaltar las etiquetas */
 }
 
 .map-btn {
-    background-color: #4facfe; /* Celeste vibrante */
+    background-color: #4fc3f7; /* Celeste vibrante */
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 8px 15px;
     border-radius: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .map-btn:hover {
-    background-color: #00c3c7; /* Celeste más oscuro al pasar el cursor */
+    background-color: #039be5; /* Azul profundo para interacción */
 }
