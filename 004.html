@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="header">
+            <!-- Logo de la municipalidad -->
+            <img src="Escudo_Distrito_de_Los_Órganos.png" alt="Logo Municipalidad" class="logo">
+            <!-- Foto de perfil del usuario -->
+            <img src="Ericka_Saldarriaga1.png" alt="Foto de perfil" class="profile-pic">
+            <h2>Juan Martinez Casas</h2>
+            <p class="subtitle">Abogado</p>
+        </div>
+        <div class="actions">
+            <button class="action-btn" onclick="toggleContent()">📞</button>
+            <button class="action-btn" onclick="toggleContent()">✉</button>
+            <button class="action-btn" onclick="toggleContent()">📍</button>
+        </div>
+        <div class="content" id="extraContent">
+            <div class="info-item">
+                <span class="info-label">Teléfono:</span>
+                <span class="info-text">972685415</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Email:</span>
+                <span class="info-text">Juan@gmail.com</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Ubicación:</span>
+                <span class="info-text">20840, Piura, Perú</span>
+                <button class="map-btn" onclick="openMap()">Ver en el mapa</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
