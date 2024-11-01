@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Marino</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0f2f1; /* Fondo celeste suave */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-card {
+            background: linear-gradient(to bottom, #4facfe, #00c3c7, #f7d794, #e9a26b);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 25px;
+            width: 90%;
+            max-width: 400px;
+            color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto de agrandamiento de la tarjeta al pasar el cursor */
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-pic {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #00c3c7;
+            transition: transform 0.3s ease;
+        }
+
+        /* Animación para la foto de perfil */
+        .profile-pic:hover {
+            transform: rotate(360deg);
+        }
+
+        .header {
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 0.9em;
+            color: #f1f8e9;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .action-btn {
+            background-color: #ffd54f;
+            color: #004d61;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        /* Cambio de color y efecto al hacer clic */
+        .action-btn:active {
+            background-color: #ffa726;
+            transform: scale(1.1);
+        }
+
+        .content {
+            background-color: #ffffff;
+            color: #004d61;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            padding: 15px;
+            text-align: left;
+            display: none; /* Comienza oculto */
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #00bcd4;
+        }
+
+        .map-btn {
+            background-color: #4fc3f7;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .map-btn:hover {
+            background-color: #039be5;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card" id="profileCard">
+        <div class="header">
+            <img src="https://via.placeholder.com/100" alt="Foto de perfil" class="profile-pic">
+            <h2>Nombre del Usuario</h2>
+            <p class="subtitle">Desarrollador Front-End</p>
+        </div>
+        <div class="actions">
+            <button class="action-btn" onclick="toggleContent()">ℹ️</button>
+            <button class="action-btn">📧</button>
+            <button class="action-btn">🌐</button>
+        </div>
+        <div class="content" id="extraContent">
+            <div class="info-item">
+                <span class="info-label">Email:</span> usuario@ejemplo.com
+            </div>
+            <div class="info-item">
+                <span class="info-label">Ubicación:</span> Ciudad Costera
+            </div>
+            <button class="map-btn" onclick="openMap()">Ver Mapa</button>
+        </div>
+    </div>
+
+    <script>
+        // Función para mostrar/ocultar contenido extra
+        function toggleContent() {
+            const content = document.getElementById('extraContent');
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Función para abrir un enlace al mapa
+        function openMap() {
+            window.open('https://www.google.com/maps', '_blank');
+        }
+    </script>
+</body>
+</html>
